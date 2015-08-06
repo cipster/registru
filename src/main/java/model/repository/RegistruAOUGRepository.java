@@ -1,0 +1,1 @@
+package model.repository;import model.RegistruAOUGEntity;import org.springframework.data.repository.CrudRepository;public interface RegistruAOUGRepository extends CrudRepository<RegistruAOUGEntity, Long> {}

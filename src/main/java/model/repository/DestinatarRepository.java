@@ -1,0 +1,1 @@
+package model.repository;import model.DestinatarEntity;import org.springframework.data.repository.CrudRepository;public interface DestinatarRepository extends CrudRepository<DestinatarEntity, Long> {}

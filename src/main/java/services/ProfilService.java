@@ -1,0 +1,1 @@
+package services;import model.ProfilEntity;import model.ProfilViewEntity;import model.response.JSONResponse;public interface ProfilService {    ProfilViewEntity getProfil();    JSONResponse save(ProfilEntity profil);    JSONResponse changePassword(String password);}

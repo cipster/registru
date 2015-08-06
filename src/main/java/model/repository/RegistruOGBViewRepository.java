@@ -1,0 +1,1 @@
+package model.repository;import model.RegistruOGBViewEntity;import org.springframework.data.repository.CrudRepository;public interface RegistruOGBViewRepository extends CrudRepository<RegistruOGBViewEntity, Long> {}

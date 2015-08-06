@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/registru</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="model.CondicaPredarePrimireDocumenteEntity"/>
+    <mapping class="model.CondicaPredarePrimireDocumenteViewEntity"/>
+    <mapping class="model.DestinatarEntity"/>
+    <mapping class="model.IesireEntity"/>
+    <mapping class="model.IntrareEntity"/>
+    <mapping class="model.IntrareViewEntity"/>
+    <mapping class="model.ProfilEntity"/>
+    <mapping class="model.ProfilViewEntity"/>
+    <mapping class="model.RegistruAOUGEntity"/>
+    <mapping class="model.RegistruAOUGViewEntity"/>
+    <mapping class="model.RegistruOGBEntity"/>
+    <mapping class="model.RegistruOGBViewEntity"/>
+    <mapping class="model.TipContinutEntity"/>
+    <mapping class="model.UserEntity"/>
+    <mapping class="model.UserRoleEntity"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

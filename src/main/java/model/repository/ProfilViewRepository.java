@@ -1,0 +1,1 @@
+package model.repository;import model.ProfilViewEntity;import org.springframework.data.repository.CrudRepository;public interface ProfilViewRepository extends CrudRepository<ProfilViewEntity, Long> {    ProfilViewEntity findOneByUsernameEquals(String username);}

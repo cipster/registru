@@ -1,0 +1,1 @@
+package model.repository;import model.ProfilEntity;import org.springframework.data.repository.CrudRepository;public interface ProfilRepository extends CrudRepository<ProfilEntity, Long> {}
