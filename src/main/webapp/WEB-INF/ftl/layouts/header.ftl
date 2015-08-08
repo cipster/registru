@@ -57,7 +57,7 @@
             [/@security.authorize]
                 <li class="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <a class="dropdown-toggle">
-                        <span id="username" data-toggle="tooltip" data-placement="bottom"></span>
+                        <span id="username" data-toggle="tooltip" data-placement="bottom"></span>&nbsp;<i class="fa fa-user"></i>
                     </a>
                 </li>
                     <ul class="dropdown-menu pull-right">

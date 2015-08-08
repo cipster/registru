@@ -3,14 +3,18 @@
 
 [@rowBreak/]
 [@modalContainer]
-    [@input "addRegistru-form-nrRegistru" "nrRegistru" "REGISTRU.NR_REGISTRU" "NR_REGISTRU.PLACEHOLDER" "" "3"/]
-    <div class="col-md-1 form-group" style="height:25px;margin-top:27px;"><span class="text-bold" style="position:relative;bottom: 0">/DRP/</span></div>
-    [@datepicker "addRegistru-form-data" "data" "REGISTRU.DATA" "DATA.PLACEHOLDER" "3"/]
-    [@elementWithLink "modal-addTipContinut" "ADD_TIP_CONTINUT" "5"]
-        [@embedableSelectBox "addRegistru-form-idTipContinut" "idTipContinut" "REGISTRU.TIP_CONTINUT" "SELECT.PLACEHOLDER" "SEARCH.NO_RESULTS" ] [/@embedableSelectBox]
+    [@input "addRegistru-aoug-form-nrInregistrare" "nrInregistrare" "REGISTRU.NR_REGISTRU" "NR_REGISTRU.PLACEHOLDER" "" "4"/]
+<div class="col-md-1 form-group" style="height:25px;margin-top:27px;"><span class="text-bold" style="position:relative;bottom: 0">/ A /</span></div>
+    [@datepicker "addRegistru-aoug-form-dataInregistrare" "dataInregistrare" "REGISTRU.DATA" "DATA.PLACEHOLDER" "4"/]
+    [@input "addRegistru-aoug-form-nrSiDataDocumentului" "nrSiDataDocumentului" "REGISTRU.NR_SI_DATA_DOCUMENT" "REGISTRU.NR_SI_DATA_DOCUMENT.PLACEHOLDER" "" "4"/]
+    [@input "addRegistru-aoug-form-emitent" "emitent" "REGISTRU.FROM" "FROM.PLACEHOLDER" "" "5"/]
+    [@elementWithLink "modal-addDestinar" "ADD_DESTINATAR" "6"]
+        [@embedableSelectBox "addRegistru-aoug-form-idDestinatar" "idDestinatar" "REGISTRU.TO" "TO.PLACEHOLDER" "SEARCH.NO_RESULTS" ] [/@embedableSelectBox]
     [/@elementWithLink]
-    [@input "addRegistru-form-deLa" "deLa" "REGISTRU.FROM" "FROM.PLACEHOLDER" "" "6"/]
-    [@input "addRegistru-form-catre" "catre" "REGISTRU.TO" "TO.PLACEHOLDER" "" "6"/]
-
-    [@textarea "addRegistru-form-continut" "continut" "REGISTRU.CONTINUT" "CONTINUT.PLACEHOLDER" "12"/]
+    [@datepicker "addRegistru-aoug-form-dataExpediere" "dataExpediere" "REGISTRU.DATA_EXPEDIERE" "DATA_EXPEDIERE.PLACEHOLDER" "4"/]
+    [@rowBreak/]
+    [@elementWithLink "modal-addTipContinut" "ADD_TIP_CONTINUT" "4"]
+        [@embedableSelectBox "addRegistru-aoug-form-idTipContinut" "idTipContinut" "REGISTRU.TIP_CONTINUT" "SELECT.PLACEHOLDER" "SEARCH.NO_RESULTS" ] [/@embedableSelectBox]
+    [/@elementWithLink]
+    [@textarea "addRegistru-aoug-form-continut" "continut" "REGISTRU.CONTINUT" "CONTINUT.PLACEHOLDER" "12"/]
 [/@modalContainer]

@@ -15,6 +15,14 @@
     [@modalForm "modal-userProfile" "MODAL.USERPROFILE" "/app/secure/profil/save-user" "SAVE.CHANGES" "user"]
         [#include "../dialogs/profileForm.ftl"]
     [/@modalForm]
+    [@security.authorize access="hasAnyRole('ROLE_ADMIN','ROLE_SUPERUSER')"]
+        [@smallModalForm "modal-addTipContinut" "ADD_TIP_CONTINUT" "/app/secure/registru/add-tip-continut" "ADD_INTRARE" "ticket"]
+            [#include "../dialogs/addTipContinutForm.ftl"]
+        [/@smallModalForm]
+        [@smallModalForm "modal-addDestinar" "ADD_DESTINATAR" "/app/secure/registru/add-destinatar" "ADD_INTRARE" "user"]
+            [#include "../dialogs/addDestinatarForm.ftl"]
+        [/@smallModalForm]
+    [/@security.authorize]
 </body>
 
 <script src="/js/jquery-2.1.4.min.js"></script>
