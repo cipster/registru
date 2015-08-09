@@ -269,11 +269,13 @@
 [/#macro]
 
 [#macro rowBreak]
-<div class="col-md-12"><br></div>
+<div class="col-md-12">
+    [#nested ]
+</div>
 [/#macro]
 
 [#macro ajaxDataTable id]
-<table id="${id}" class="table dataTable table-responsive table-hover" width="100%">
+<table id="${id}" class="table dataTable table-responsive table-hover table-condensed" width="100%">
     <thead>
     <tr class="text-table-head">
         [#nested]

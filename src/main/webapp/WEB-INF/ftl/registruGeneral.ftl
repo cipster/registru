@@ -62,13 +62,13 @@
             </div>
 
         </div>
-            [@modalForm "modal-addRegistru" "ADD_INREGISTRARE" "/app/secure/registru/add-intrare" "ADD_INTRARE" "book"]
-                [#include "dialogs/addAOUGForm.ftl"]
+            [@modalForm "modal-addIntrare" "BUT_ADD_INTRARE" "/app/secure/registru/add-intrare" "ADD_INTRARE" "book"]
+                [#include "dialogs/addIntrareForm.ftl"]
             [/@modalForm]
 
-            [@smallModalForm "modal-addTipContinut" "ADD_TIP_CONTINUT" "/app/secure/registru/add-tip-continut" "ADD_INTRARE" "ticket"]
-                [#include "dialogs/addTipContinutForm.ftl"]
-            [/@smallModalForm]
+            [@modalForm "modal-addIesire" "BUT_ADD_IESIRE" "/app/secure/registru/add-iesire" "ADD_INTRARE" "book"]
+                [#include "dialogs/addIesireForm.ftl"]
+            [/@modalForm]
         [/@security.authorize]
 
     [/@content]
