@@ -79,7 +79,7 @@
 <div class="form-group col-md-${size}">
     <label for="${id}">[@spring.message label/]</label>
     <input type="text" class="form-control input-sm" id="${id}" name="${name}" title="[@spring.message label /]" placeholder="[@spring.message placeholder /]" value="${value}" required="true"
-    [@security.authorize access="!hasAnyRole('ROLE_ADMIN','ROLE_SUPERUSER')"] disabled="disabled"[/@security.authorize] >
+        [@security.authorize access="!hasAnyRole('ROLE_ADMIN')"] disabled="disabled"[/@security.authorize] >
 
     <div id="${name}-error" class="help-block"></div>
 </div>
@@ -88,7 +88,7 @@
 [#macro embedableAdminInput id name label placeholder]
     <label for="${id}">[@spring.message label/]</label>
     <input type="text" class="form-control input-sm" id="${id}" name="${name}" title="[@spring.message label /]" placeholder="[@spring.message placeholder /]" required="true"
-    [@security.authorize access="!hasAnyRole('ROLE_ADMIN','ROLE_SUPERUSER')"] disabled="disabled"[/@security.authorize] >
+        [@security.authorize access="!hasAnyRole('ROLE_ADMIN')"] disabled="disabled"[/@security.authorize] >
 
     <div id="${name}-error" class="help-block"></div>
 [/#macro]

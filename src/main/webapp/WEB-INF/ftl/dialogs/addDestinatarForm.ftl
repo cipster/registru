@@ -1,6 +1,6 @@
 [#ftl]
 [#include "../formMacros.ftl"]
 [@modalContainer]
-    [@input "addDestinar-form-detsinatar" "destinatar" "DESTINATAR" "DESTINATAR.PLACEHOLDER" "" "7"/]
+    [@input "addDestinar-form-destinatar" "destinatar" "DESTINATAR" "DESTINATAR.PLACEHOLDER" "" "7"/]
 
 [/@modalContainer]

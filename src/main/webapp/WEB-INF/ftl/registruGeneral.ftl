@@ -63,7 +63,7 @@
 
         </div>
             [@modalForm "modal-addRegistru" "ADD_INREGISTRARE" "/app/secure/registru/add-intrare" "ADD_INTRARE" "book"]
-                [#include "dialogs/addInregistrareForm.ftl"]
+                [#include "dialogs/addAOUGForm.ftl"]
             [/@modalForm]
 
             [@smallModalForm "modal-addTipContinut" "ADD_TIP_CONTINUT" "/app/secure/registru/add-tip-continut" "ADD_INTRARE" "ticket"]

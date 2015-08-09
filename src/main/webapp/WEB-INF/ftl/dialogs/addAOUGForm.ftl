@@ -17,5 +17,6 @@
     [@elementWithLink "modal-addTipContinut" "ADD_TIP_CONTINUT" "6"]
         [@embedableSelectBox "addRegistru-aoug-form-idTipContinut" "idTipContinut" "REGISTRU.TIP_CONTINUT" "SELECT.PLACEHOLDER" "SEARCH.NO_RESULTS" ] [/@embedableSelectBox]
     [/@elementWithLink]
+    [@checkbox "addRegistru-aoug-form-formatFizic" "formatFizic" "REGISTRU.PRIMIT_PRIN_POSTA_FORM" "" "6"/]
     [@textarea "addRegistru-aoug-form-continut" "continut" "REGISTRU.CONTINUT" "CONTINUT.PLACEHOLDER" "12"/]
 [/@modalContainer]
