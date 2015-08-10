@@ -1,1 +1,1 @@
-package model.repository;import model.IesireEntity;import org.springframework.data.repository.CrudRepository;public interface IesireRepository extends CrudRepository<IesireEntity, Long> {}
+package model.repository;import model.entity.IesireEntity;import org.springframework.data.repository.CrudRepository;public interface IesireRepository extends CrudRepository<IesireEntity, Long> {}

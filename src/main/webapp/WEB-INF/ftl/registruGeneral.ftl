@@ -22,7 +22,6 @@
     [/@sidebar]
     [@content]
 
-        [@security.authorize access="hasAnyRole('ROLE_ADMIN','ROLE_SUPERUSER')"]
         <div>
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
@@ -62,6 +61,7 @@
             </div>
 
         </div>
+        [@security.authorize access="hasAnyRole('ROLE_ADMIN','ROLE_SUPERUSER')"]
             [@modalForm "modal-addIntrare" "BUT_ADD_INTRARE" "/app/secure/registru/add-intrare" "ADD_INTRARE" "book"]
                 [#include "dialogs/addIntrareForm.ftl"]
             [/@modalForm]

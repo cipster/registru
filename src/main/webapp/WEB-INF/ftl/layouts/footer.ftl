@@ -4,7 +4,7 @@
 
     <p><span class="copyright">Copyright &copy; &bull; Guvernul Rom&#226;niei&nbsp;
         <span id="an-copyright"></span>
-        <span class="pull-right"><span class="small">made by </span><span class="green">Raindrop Solutions</span></span>
+        <span class="pull-right"><span class="small">made by </span><a href="http://raindrop-solutions.ro" class="green">Raindrop Solutions</a></span>
     </p>
 </div>
 <form action="/logout?${_csrf.parameterName}=${_csrf.token}" method="post" id="logoutForm"></form>

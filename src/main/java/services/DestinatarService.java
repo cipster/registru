@@ -1,1 +1,1 @@
-package services;import model.DestinatarEntity;import java.util.List;public interface DestinatarService {    List<DestinatarEntity> findAllDestinatari();    DestinatarEntity save(DestinatarEntity destinatar);}
+package services;import model.entity.DestinatarEntity;import java.util.List;public interface DestinatarService {    List<DestinatarEntity> findAllDestinatari();    DestinatarEntity save(DestinatarEntity destinatar);}

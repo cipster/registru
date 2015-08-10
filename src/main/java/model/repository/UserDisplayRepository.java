@@ -1,0 +1,1 @@
+package model.repository;import model.entity.UserDisplayEntity;import org.springframework.data.repository.CrudRepository;public interface UserDisplayRepository extends CrudRepository<UserDisplayEntity, Long> {}

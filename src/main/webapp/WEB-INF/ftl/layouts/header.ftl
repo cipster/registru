@@ -52,7 +52,7 @@
                 <li id="condica"><a href="/condica">[@spring.message "CONDICA"/]</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-            [@security.authorize ifAnyGranted="ROLE_ADMIN"]
+            [@security.authorize access="hasAnyRole('ROLE_ADMIN','ROLE_SUPERUSER')"]
                 <li id="admin"><a href="/administration">[@spring.message "ADMIN"/]</a></li>
             [/@security.authorize]
                 <li class="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -78,5 +78,5 @@
     </div>
 </nav>
 <!--[if IE 5]>
-<p>HI, WHAT IS THE PAST LIKE?</p>
+<p>SALUT, CUM E SA FII IN TRECUT?</p>
 <![endif]-->

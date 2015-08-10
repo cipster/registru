@@ -1,1 +1,1 @@
-package model.repository;import model.IntrareEntity;import org.springframework.data.repository.CrudRepository;public interface IntrareRepository extends CrudRepository<IntrareEntity, Long> {}
+package model.repository;import model.entity.IntrareEntity;import org.springframework.data.repository.CrudRepository;public interface IntrareRepository extends CrudRepository<IntrareEntity, Long> {}
