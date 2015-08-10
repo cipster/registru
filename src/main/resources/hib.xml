@@ -6,21 +6,22 @@
   <session-factory>
     <property name="connection.url">jdbc:mysql://localhost:3306/registru</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-    <mapping class="model.CondicaPredarePrimireDocumenteEntity"/>
-    <mapping class="model.CondicaPredarePrimireDocumenteViewEntity"/>
-    <mapping class="model.DestinatarEntity"/>
-    <mapping class="model.IesireEntity"/>
-    <mapping class="model.IntrareEntity"/>
-    <mapping class="model.IntrareViewEntity"/>
-    <mapping class="model.ProfilEntity"/>
-    <mapping class="model.ProfilViewEntity"/>
-    <mapping class="model.RegistruAOUGEntity"/>
-    <mapping class="model.RegistruAOUGViewEntity"/>
-    <mapping class="model.RegistruOGBEntity"/>
-    <mapping class="model.RegistruOGBViewEntity"/>
-    <mapping class="model.TipContinutEntity"/>
-    <mapping class="model.UserEntity"/>
-    <mapping class="model.UserRoleEntity"/>
+    <mapping class="model.entity.CondicaPredarePrimireDocumenteEntity"/>
+    <mapping class="model.entity.CondicaPredarePrimireDocumenteViewEntity"/>
+    <mapping class="model.entity.DestinatarEntity"/>
+    <mapping class="model.entity.IesireEntity"/>
+    <mapping class="model.entity.IntrareEntity"/>
+    <mapping class="model.entity.IntrareViewEntity"/>
+    <mapping class="model.entity.ProfilEntity"/>
+    <mapping class="model.entity.ProfilViewEntity"/>
+    <mapping class="model.entity.RegistruAOUGEntity"/>
+    <mapping class="model.entity.RegistruAOUGViewEntity"/>
+    <mapping class="model.entity.RegistruOGBEntity"/>
+    <mapping class="model.entity.RegistruOGBViewEntity"/>
+    <mapping class="model.entity.TipContinutEntity"/>
+    <mapping class="model.entity.UserEntity"/>
+    <mapping class="model.entity.UserRoleEntity"/>
+    <mapping class="model.entity.UserDisplayEntity"/>
     <!-- DB schema will be updated if needed -->
     <!-- <property name="hbm2ddl.auto">update</property> -->
   </session-factory>

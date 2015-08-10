@@ -1,1 +1,1 @@
-package services;import model.TipContinutEntity;import java.util.List;public interface TipContinutService {    List<TipContinutEntity> findAll();    TipContinutEntity save(TipContinutEntity entity);}
+package services;import model.entity.TipContinutEntity;import java.util.List;public interface TipContinutService {    List<TipContinutEntity> findAll();    TipContinutEntity save(TipContinutEntity entity);}

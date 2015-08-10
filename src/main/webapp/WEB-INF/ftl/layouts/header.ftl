@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="utf-8">
+    <meta charset="iso-8859-1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Raindrop">
@@ -52,12 +52,12 @@
                 <li id="condica"><a href="/condica">[@spring.message "CONDICA"/]</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-            [@security.authorize ifAnyGranted="ROLE_ADMIN"]
+            [@security.authorize access="hasAnyRole('ROLE_ADMIN','ROLE_SUPERUSER')"]
                 <li id="admin"><a href="/administration">[@spring.message "ADMIN"/]</a></li>
             [/@security.authorize]
                 <li class="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <a class="dropdown-toggle">
-                        <span id="username" data-toggle="tooltip" data-placement="bottom"></span>
+                        <span id="username" data-toggle="tooltip" data-placement="bottom"></span>&nbsp;<i class="fa fa-user"></i>
                     </a>
                 </li>
                     <ul class="dropdown-menu pull-right">
@@ -78,5 +78,5 @@
     </div>
 </nav>
 <!--[if IE 5]>
-<p>HI, WHAT IS THE PAST LIKE?</p>
+<p>SALUT, CUM E SA FII IN TRECUT?</p>
 <![endif]-->
