@@ -10,7 +10,13 @@
     [@adminInput "userProfile-form-nume" "nume" "USER.LASTNAME" "USER.LASTNAME.PLACEHOLDER" "" "4"/]
     [@adminInput "userProfile-form-prenume" "prenume" "USER.NAME" "USER.NAME.PLACEHOLDER" "" "4"/]
     [@rowBreak/]
-    [@hiddenSelectNotAdmin "userProfile-form-roles" "roles" "USER.ROLES" "6"/]
+    [@hiddenSelectNotAdmin "userProfile-form-roles" "roles" "USER.ROLES" "6"]
+        [@embedableMultiSelectBox "userProfile-form-roles" "roles" "USER.ROLES"]
+        <option value="1">Administrator</option>
+        <option value="2">Registru</option>
+        <option value="3">Vizualizare</option>
+        [/@embedableMultiSelectBox]
+    [/@hiddenSelectNotAdmin]
     [@rowBreak/]
     [@adminInput "userProfile-form-email" "email" "USER.EMAIL" "USER.EMAIL.PLACEHOLDER" "" "6"/]
     [@adminInput "userProfile-form-workTel" "workTel" "USER.WORKPHONE" "USER.PHONE.PLACEHOLDER" "" "6"/]

@@ -1,0 +1,1 @@
+package model.repository;import model.entity.RolesEntity;import org.springframework.data.repository.CrudRepository;public interface RolesRepository extends CrudRepository<RolesEntity, Long> {}

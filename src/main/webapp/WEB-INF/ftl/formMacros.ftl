@@ -99,7 +99,7 @@
 [#macro hiddenSelectNotAdmin id name label size="3"]
     [@security.authorize access="hasAnyRole('ROLE_ADMIN')"]
     <div class="col-md-${size}">
-        [@embedableMultiSelectBox id name label/]
+        [#nested]
     </div>
     [/@security.authorize]
 [/#macro]

@@ -52,8 +52,10 @@
     </div>
 
     <div class="custom-footer">
-        <p><span class="copyright">Copyright &copy; &middot; <span class="green">Raindrop Solutions <span
-                id="an-copyright"></span></span>&nbsp;&bull;&nbsp;<a>[@spring.message "APPTITLE"/]</a></p>
+        <p><span class="copyright">Copyright &copy; &bull; Guvernul Rom&#226;niei&nbsp;
+        <span id="an-copyright"></span>
+        <span class="pull-right"><span class="small">made by </span><a href="http://raindrop-solutions.ro" class="green">Raindrop Solutions</a></span>
+        </p>
     </div>
 
 </div>
