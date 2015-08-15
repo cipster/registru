@@ -9,7 +9,7 @@
     [@rowBreak/]
     [@input "addRegistru-aoug-form-nrSiDataDocumentului" "nrSiDataDocumentului" "REGISTRU.NR_SI_DATA_DOCUMENT" "REGISTRU.NR_SI_DATA_DOCUMENT.PLACEHOLDER" "" "6"/]
     [@input "addRegistru-aoug-form-emitent" "emitent" "REGISTRU.FROM" "FROM.PLACEHOLDER" "" "6"/]
-    [@elementWithLink "modal-addDestinar" "ADD_DESTINATAR" "6"]
+    [@elementWithLink "modal-addDestinatar" "ADD_DESTINATAR" "6"]
         [@embedableSelectBox "addRegistru-aoug-form-idDestinatar" "idDestinatar" "REGISTRU.TO" "TO.PLACEHOLDER" "SEARCH.NO_RESULTS" ] [/@embedableSelectBox]
     [/@elementWithLink]
     [@datepicker "addRegistru-aoug-form-dataExpediere" "dataExpediere" "REGISTRU.DATA_EXPEDIERE" "DATA_EXPEDIERE.PLACEHOLDER" "6"/]

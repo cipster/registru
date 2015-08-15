@@ -54,7 +54,8 @@
     <div class="custom-footer">
         <p><span class="copyright">Copyright &copy; &bull; Guvernul Rom&#226;niei&nbsp;
         <span id="an-copyright"></span>
-        <span class="pull-right"><span class="small">made by </span><a href="http://raindrop-solutions.ro" class="green">Raindrop Solutions</a></span>
+        <span class="pull-right"><span class="small">made by </span><img src="img/raindrop-logo.png" class="raindrop">  <a href="http://raindrop-solutions.ro" class="green">Raindrop
+            Solutions</a></span>
         </p>
     </div>
 
