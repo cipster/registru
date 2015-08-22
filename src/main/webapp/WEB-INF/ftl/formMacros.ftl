@@ -200,6 +200,12 @@
 </a>
 [/#macro]
 
+[#macro listItemButton name label icon]
+<a id="${name}" name="${name}" title="[@spring.message label /]" class="list-group-item">
+    <i class="fa fa-fw fa-${icon}"></i>&nbsp;&nbsp;[@spring.message label /]
+</a>
+[/#macro]
+
 [#macro form name action method="post" enctype="application/x-www-form-urlencoded" size="3"]
 <div class="col-md-${size}">
     <form id="${name}" name="${name}" action="${action}" method="${method}" role="form" enctype="${enctype}" autocomplete="off">
