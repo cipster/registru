@@ -19,7 +19,7 @@
     <link href="/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/chosen.css" rel="stylesheet">
     <link href="/css/datepicker.css" rel="stylesheet">
-    <link href="/css/dataTables-bootstrap.css" rel="stylesheet">
+    <link href="/DataTables/datatables.min.css" rel="stylesheet">
     <link href="/css/dropzone.css" rel="stylesheet">
     <link href="/css/registru.css" rel="stylesheet">
 </head>
