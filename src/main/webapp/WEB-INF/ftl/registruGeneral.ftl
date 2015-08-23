@@ -15,10 +15,10 @@
                 [@listItemOpenModal "addIesire" "BUT_ADD_IESIRE" "modal-addIesire" "sign-out fa-1-5x"/]
             </div>
             <div class="list-group">
-                [@listItemButton "anuleazaCondicaIntrare" "ANULEAZA_INREGISTRARE" "ban"/]
+                [@listItemButton "anuleazaCondicaIntrare" "ANULEAZA_INREGISTRARE" "ban fa-1-5x"/]
             </div>
             <div class="list-group">
-                [@listItemButton "anuleazaCondicaIesire" "ANULEAZA_INREGISTRARE" "ban"/]
+                [@listItemButton "anuleazaCondicaIesire" "ANULEAZA_INREGISTRARE" "ban fa-1-5x"/]
             </div>
             <div class="list-group">
                 [@listItemOpenModal "addTipContinut" "ADD_TIP_CONTINUT" "modal-addTipContinut" "ticket fa-1-5x"/]
