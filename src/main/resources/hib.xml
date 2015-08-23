@@ -22,6 +22,7 @@
     <mapping class="model.entity.UserEntity"/>
     <mapping class="model.entity.UserRoleEntity"/>
     <mapping class="model.entity.UserDisplayEntity"/>
+    <mapping class="model.entity.RolesEntity"/>
     <!-- DB schema will be updated if needed -->
     <!-- <property name="hbm2ddl.auto">update</property> -->
   </session-factory>

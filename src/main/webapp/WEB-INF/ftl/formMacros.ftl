@@ -99,7 +99,7 @@
 [#macro hiddenSelectNotAdmin id name label size="3"]
     [@security.authorize access="hasAnyRole('ROLE_ADMIN')"]
     <div class="col-md-${size}">
-        [@embedableMultiSelectBox id name label/]
+        [#nested]
     </div>
     [/@security.authorize]
 [/#macro]
@@ -196,6 +196,12 @@
 
 [#macro listItemOpenModal name label modal icon]
 <a id="${name}-open" name="${name}" title="[@spring.message label /]" data-toggle="modal" data-target="#${modal}" class="list-group-item">
+    <i class="fa fa-fw fa-${icon}"></i>&nbsp;&nbsp;[@spring.message label /]
+</a>
+[/#macro]
+
+[#macro listItemButton name label icon]
+<a id="${name}" name="${name}" title="[@spring.message label /]" class="list-group-item">
     <i class="fa fa-fw fa-${icon}"></i>&nbsp;&nbsp;[@spring.message label /]
 </a>
 [/#macro]

@@ -19,7 +19,7 @@
         [@smallModalForm "modal-addTipContinut" "ADD_TIP_CONTINUT" "/app/secure/registru/add-tip-continut" "ADD_INTRARE" "ticket"]
             [#include "../dialogs/addTipContinutForm.ftl"]
         [/@smallModalForm]
-        [@smallModalForm "modal-addDestinar" "ADD_DESTINATAR" "/app/secure/registru/add-destinatar" "ADD_INTRARE" "user"]
+        [@smallModalForm "modal-addDestinatar" "ADD_DESTINATAR" "/app/secure/registru/add-destinatar" "ADD_INTRARE" "user"]
             [#include "../dialogs/addDestinatarForm.ftl"]
         [/@smallModalForm]
     [/@security.authorize]

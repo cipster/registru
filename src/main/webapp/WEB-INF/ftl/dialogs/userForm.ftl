@@ -1,0 +1,25 @@
+[#ftl]
+[#include "../formMacros.ftl"]
+
+[@rowBreak/]
+[@modalContainer]
+    [@hiddenInput "addUser-form-id-profil" "id-profil"/]
+    [@adminInput "addUser-form-username" "username" "USER.USERNAME" "USER.USERNAME" "" "4"/]
+    [@adminInput "addUser-form-nume" "nume" "USER.LASTNAME" "USER.LASTNAME.PLACEHOLDER" "" "4"/]
+    [@adminInput "addUser-form-prenume" "prenume" "USER.NAME" "USER.NAME.PLACEHOLDER" "" "4"/]
+    [@rowBreak/]
+    [@hiddenSelectNotAdmin "addUser-form-roles" "roles" "USER.ROLES" "6"]
+        [@embedableMultiSelectBox "addUser-form-roles" "roles" "USER.ROLES"]
+            [@security.authorize access="hasAnyRole('ROLE_ADMIN')"]
+            <option value="3">Administrator</option>
+            [/@security.authorize]
+        <option value="2">Registru</option>
+        <option value="1" selected>Vizualizare</option>
+        [/@embedableMultiSelectBox]
+    [/@hiddenSelectNotAdmin]
+    [@rowBreak/]
+    [@adminInput "addUser-form-email" "email" "USER.EMAIL" "USER.EMAIL.PLACEHOLDER" "" "6"/]
+    [@adminInput "addUser-form-workTel" "workTel" "USER.WORKPHONE" "USER.PHONE.PLACEHOLDER" "" "6"/]
+    [@adminInput "addUser-form-tel" "tel" "USER.MOBILEPHONE" "USER.PHONE.PLACEHOLDER" "" "6"/]
+    [@adminInput "addUser-form-fax" "fax" "USER.FAX" "USER.PHONE.PLACEHOLDER" "" "6"/]
+[/@modalContainer]
