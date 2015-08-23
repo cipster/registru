@@ -315,6 +315,9 @@
         <span class="input-group-addon" id="search-${id}-addon"><i class="fa fa-search"></i></span>
         <input id="${id}" type="text" class="form-control" placeholder="[@spring.message "SEARCH"/]" aria-describedby="search-${id}-addon">
     </div>
+    <div>
+        <a id="advanced-search">[@spring.message "ADVANCED_SEARCH"/]</a>
+    </div>
 </div>
 
 [/#macro]
