@@ -136,7 +136,7 @@
 
     <div class="input-group date">
         <input type="text" class="form-control input-sm date-picker" aria-disabled="true" id="${id}" name="${name}" placeholder="[@spring.message placeholder /]" title="[@spring.message label /]"
-               data-date-format="yyyy-mm-dd" required>
+               data-date-format="dd-mm-yyyy" required>
         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
     </div>
 

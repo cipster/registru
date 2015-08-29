@@ -41,14 +41,13 @@
                     [@rowBreak/]
                     [@rowBreak/]
                     [@ajaxDataTable "intrare-table"]
-                        <th> [@spring.message "REGISTRU.NR_CRT"/] </th>
-                        <th> [@spring.message "REGISTRU.DATA_INTRARII"/] </th>
-                        <th> [@spring.message "REGISTRU.NR_HARTIEI_INTRARE"/] </th>
-                        <th> [@spring.message "REGISTRU.DE_LA_CINE_VINE_CORESPONDENTA"/] </th>
-                        <th> [@spring.message "REGISTRU.TIP_CONTINUT"/] </th>
+                        <th width="80"> [@spring.message "REGISTRU.NR_CRT"/] </th>
+                        <th width="100"> [@spring.message "REGISTRU.DATA_INTRARII"/] </th>
+                        <th width="120"> [@spring.message "REGISTRU.NR_HARTIEI_INTRARE"/] </th>
+                        <th width="150"> [@spring.message "REGISTRU.DE_LA_CINE_VINE_CORESPONDENTA"/] </th>
                         <th> [@spring.message "REGISTRU.CONTINUT"/] </th>
                         <th> [@spring.message "REGISTRU.REZOLUTII_SI_TERMENE"/] </th>
-                        <th> [@spring.message "REGISTRU.PRIMIT_PRIN_POSTA"/] </th>
+                        <th width="100"> [@spring.message "REGISTRU.PRIMIT_PRIN_POSTA"/] </th>
                     [/@ajaxDataTable]
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="iesire">
