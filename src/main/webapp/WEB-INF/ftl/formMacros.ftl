@@ -221,9 +221,9 @@
 </div>
 [/#macro]
 
-[#macro modalForm name title action submitLabel icon]
+[#macro modalForm name title action submitLabel icon size="modal-lg"]
 <div id="${name}" class="modal fade">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog ${size}">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">[@spring.message "MODAL.CLOSEDIALOG"/]</span></button>
