@@ -3,7 +3,7 @@
 
 [@rowBreak/]
 [@modalContainer]
-    [@input "addRegistru-ogb-form-nrInregistrari" "nrInregistrari" "REGISTRU.NR_REGISTRU" "NR_REGISTRU.PLACEHOLDER" "" "6"/]
+    [@input "addRegistru-ogb-form-nrInregistrare" "nrInregistrare" "REGISTRU.NR_REGISTRU" "NR_REGISTRU.PLACEHOLDER" "" "6"/]
 <div class="col-md-1 form-group" style="height:25px;margin-top:27px;"><span class="text-bold" style="position:relative;bottom: 0">/ B /</span></div>
     [@datepicker "addRegistru-ogb-form-dataInregistrare" "dataInregistrare" "REGISTRU.DATA" "DATA.PLACEHOLDER" "5"/]
     [@rowBreak/]

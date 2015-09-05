@@ -54,13 +54,13 @@
                     [@rowBreak/]
                     [@rowBreak/]
                     [@ajaxDataTable "iesire-table"]
-                        <th> [@spring.message "REGISTRU.DATA_IESIRII"/] </th>
-                        <th> [@spring.message "REGISTRU.REZOLVARE"/] </th>
-                        <th> [@spring.message "REGISTRU.CATRE_CINE_S_A_LUCRAT"/] </th>
-                        <th> [@spring.message "REGISTRU.NR_DOSAR_SI_AN"/] </th>
-                        <th> [@spring.message "REGISTRU.DATA_SI_NR_INTRARE"/] </th>
-                        <th> [@spring.message "REGISTRU.NR_SI_DATA_REVENIRE"/] </th>
-                        <th> [@spring.message "REGISTRU.PRIMIT_PRIN_POSTA"/] </th>
+                        <th width="100"> [@spring.message "REGISTRU.DATA_IESIRII"/] </th>
+                        <th width="150"> [@spring.message "REGISTRU.REZOLVARE"/] </th>
+                        <th width="150"> [@spring.message "REGISTRU.CATRE_CINE_S_A_LUCRAT"/] </th>
+                        <th width="150"> [@spring.message "REGISTRU.NR_DOSAR_SI_AN"/] </th>
+                        <th width="150"> [@spring.message "REGISTRU.DATA_SI_NR_INTRARE"/] </th>
+                        <th width="150"> [@spring.message "REGISTRU.NR_SI_DATA_REVENIRE"/] </th>
+                        <th width="100"> [@spring.message "REGISTRU.PRIMIT_PRIN_POSTA"/] </th>
                     [/@ajaxDataTable]
                 </div>
             </div>

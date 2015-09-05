@@ -316,10 +316,9 @@
         <input id="${id}" type="text" class="form-control" placeholder="[@spring.message "SEARCH"/]" aria-describedby="search-${id}-addon">
     </div>
     <div>
-        <a id="advanced-search">[@spring.message "ADVANCED_SEARCH"/]</a>
+        <a id="advanced-search" title="[@spring.message "ADVANCED_SEARCH_CLOSE"/]">[@spring.message "ADVANCED_SEARCH"/]</a>
     </div>
 </div>
-
 [/#macro]
 
 [#macro pictureUpload fileName label size="4"]
