@@ -14,7 +14,7 @@
             <option value="3">Administrator</option>
             [/@security.authorize]
         <option value="2">Registru</option>
-        <option value="1" selected>Vizualizare</option>
+        <option value="1">Vizualizare</option>
         [/@embedableMultiSelectBox]
     [/@hiddenSelectNotAdmin]
     [@rowBreak/]

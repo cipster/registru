@@ -15,10 +15,16 @@
                 [@listItemOpenModal "addIesire" "BUT_ADD_IESIRE" "modal-addIesire" "sign-out fa-1-5x"/]
             </div>
             <div class="list-group">
-                [@listItemButton "anuleazaCondicaIntrare" "ANULEAZA_INREGISTRARE" "ban"/]
+                [@listItemButton "anuleazaCondicaIntrare" "ANULEAZA_INREGISTRARE" "ban fa-1-5x"/]
             </div>
             <div class="list-group">
-                [@listItemButton "anuleazaCondicaIesire" "ANULEAZA_INREGISTRARE" "ban"/]
+                [@listItemButton "anuleazaCondicaIesire" "ANULEAZA_INREGISTRARE" "ban fa-1-5x"/]
+            </div>
+            <div class="list-group">
+                [@listItemOpenModal "rezervaIntrare" "REZERVA_INREGISTRARI" "modal-rezerva-intrare" "calendar fa-1-5x"/]
+            </div>
+            <div class="list-group">
+                [@listItemOpenModal "rezervaIesire" "REZERVA_INREGISTRARI" "modal-rezerva-iesire" "calendar fa-1-5x"/]
             </div>
             <div class="list-group">
                 [@listItemOpenModal "addTipContinut" "ADD_TIP_CONTINUT" "modal-addTipContinut" "ticket fa-1-5x"/]
@@ -41,27 +47,26 @@
                     [@rowBreak/]
                     [@rowBreak/]
                     [@ajaxDataTable "intrare-table"]
-                        <th> [@spring.message "REGISTRU.NR_CRT"/] </th>
-                        <th> [@spring.message "REGISTRU.DATA_INTRARII"/] </th>
-                        <th> [@spring.message "REGISTRU.NR_HARTIEI_INTRARE"/] </th>
-                        <th> [@spring.message "REGISTRU.DE_LA_CINE_VINE_CORESPONDENTA"/] </th>
-                        <th> [@spring.message "REGISTRU.TIP_CONTINUT"/] </th>
+                        <th width="80"> [@spring.message "REGISTRU.NR_CRT"/] </th>
+                        <th width="100"> [@spring.message "REGISTRU.DATA_INTRARII"/] </th>
+                        <th width="120"> [@spring.message "REGISTRU.NR_HARTIEI_INTRARE"/] </th>
+                        <th width="150"> [@spring.message "REGISTRU.DE_LA_CINE_VINE_CORESPONDENTA"/] </th>
                         <th> [@spring.message "REGISTRU.CONTINUT"/] </th>
                         <th> [@spring.message "REGISTRU.REZOLUTII_SI_TERMENE"/] </th>
-                        <th> [@spring.message "REGISTRU.PRIMIT_PRIN_POSTA"/] </th>
+                        <th width="100"> [@spring.message "REGISTRU.PRIMIT_PRIN_POSTA"/] </th>
                     [/@ajaxDataTable]
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="iesire">
                     [@rowBreak/]
                     [@rowBreak/]
                     [@ajaxDataTable "iesire-table"]
-                        <th> [@spring.message "REGISTRU.DATA_IESIRII"/] </th>
-                        <th> [@spring.message "REGISTRU.REZOLVARE"/] </th>
-                        <th> [@spring.message "REGISTRU.CATRE_CINE_S_A_LUCRAT"/] </th>
-                        <th> [@spring.message "REGISTRU.NR_DOSAR_SI_AN"/] </th>
-                        <th> [@spring.message "REGISTRU.DATA_SI_NR_INTRARE"/] </th>
-                        <th> [@spring.message "REGISTRU.NR_SI_DATA_REVENIRE"/] </th>
-                        <th> [@spring.message "REGISTRU.PRIMIT_PRIN_POSTA"/] </th>
+                        <th width="100"> [@spring.message "REGISTRU.DATA_IESIRII"/] </th>
+                        <th width="150"> [@spring.message "REGISTRU.REZOLVARE"/] </th>
+                        <th width="150"> [@spring.message "REGISTRU.CATRE_CINE_S_A_LUCRAT"/] </th>
+                        <th width="150"> [@spring.message "REGISTRU.NR_DOSAR_SI_AN"/] </th>
+                        <th width="150"> [@spring.message "REGISTRU.DATA_SI_NR_INTRARE"/] </th>
+                        <th width="150"> [@spring.message "REGISTRU.NR_SI_DATA_REVENIRE"/] </th>
+                        <th width="100"> [@spring.message "REGISTRU.PRIMIT_PRIN_POSTA"/] </th>
                     [/@ajaxDataTable]
                 </div>
             </div>
@@ -74,6 +79,22 @@
 
             [@modalForm "modal-addIesire" "BUT_ADD_IESIRE" "/app/secure/registru/add-iesire" "ADD_INTRARE" "book"]
                 [#include "dialogs/addIesireForm.ftl"]
+            [/@modalForm]
+
+            [@modalForm "modal-editIntrare" "EDIT_REZERVARE" "/app/secure/registru/edit-intrare" "UPDATE_INTRARE" "calendar"]
+                [#include "dialogs/editIntrareForm.ftl"]
+            [/@modalForm]
+
+            [@modalForm "modal-rezerva-intrare" "REZERVA_INREGISTRARI" "/app/secure/registru/rezerva-intrare" "REZERVA_INREGISTRARI" "calendar" ""]
+                [#include "dialogs/rezervaIntrareForm.ftl"]
+            [/@modalForm]
+
+            [@modalForm "modal-editIesire" "EDIT_REZERVARE" "/app/secure/registru/edit-iesire" "UPDATE_INTRARE" "calendar"]
+                [#include "dialogs/editIesireForm.ftl"]
+            [/@modalForm]
+
+            [@modalForm "modal-rezerva-iesire" "REZERVA_INREGISTRARI" "/app/secure/registru/rezerva-iesire" "REZERVA_INREGISTRARI" "calendar" ""]
+                [#include "dialogs/rezervaIesireForm.ftl"]
             [/@modalForm]
         [/@security.authorize]
 

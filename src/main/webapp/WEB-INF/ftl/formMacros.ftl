@@ -136,7 +136,7 @@
 
     <div class="input-group date">
         <input type="text" class="form-control input-sm date-picker" aria-disabled="true" id="${id}" name="${name}" placeholder="[@spring.message placeholder /]" title="[@spring.message label /]"
-               data-date-format="yyyy-mm-dd" required>
+               data-date-format="dd-mm-yyyy" required>
         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
     </div>
 
@@ -221,9 +221,9 @@
 </div>
 [/#macro]
 
-[#macro modalForm name title action submitLabel icon]
+[#macro modalForm name title action submitLabel icon size="modal-lg"]
 <div id="${name}" class="modal fade">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog ${size}">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">[@spring.message "MODAL.CLOSEDIALOG"/]</span></button>
@@ -316,10 +316,9 @@
         <input id="${id}" type="text" class="form-control" placeholder="[@spring.message "SEARCH"/]" aria-describedby="search-${id}-addon">
     </div>
     <div>
-        <a id="advanced-search">[@spring.message "ADVANCED_SEARCH"/]</a>
+        <a id="advanced-search" title="[@spring.message "ADVANCED_SEARCH_CLOSE"/]">[@spring.message "ADVANCED_SEARCH"/]</a>
     </div>
 </div>
-
 [/#macro]
 
 [#macro pictureUpload fileName label size="4"]
