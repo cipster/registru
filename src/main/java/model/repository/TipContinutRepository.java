@@ -1,1 +1,1 @@
-package model.repository;import model.entity.TipContinutEntity;import org.springframework.data.repository.CrudRepository;public interface TipContinutRepository extends CrudRepository<TipContinutEntity, Long> {}
+package model.repository;import model.entity.TipContinutEntity;import org.springframework.data.repository.CrudRepository;public interface TipContinutRepository extends CrudRepository<TipContinutEntity, Long> {    TipContinutEntity findOneByTipContinutEquals(String tipContinut);}

@@ -21,6 +21,12 @@
                 [@listItemButton "anuleazaCondicaIesire" "ANULEAZA_INREGISTRARE" "ban fa-1-5x"/]
             </div>
             <div class="list-group">
+                [@listItemOpenModal "rezervaIntrare" "REZERVA_INREGISTRARI" "modal-rezerva-intrare" "calendar fa-1-5x"/]
+            </div>
+            <div class="list-group">
+                [@listItemOpenModal "rezervaIesire" "REZERVA_INREGISTRARI" "modal-rezerva-iesire" "calendar fa-1-5x"/]
+            </div>
+            <div class="list-group">
                 [@listItemOpenModal "addTipContinut" "ADD_TIP_CONTINUT" "modal-addTipContinut" "ticket fa-1-5x"/]
             </div>
         [/@security.authorize]
@@ -73,6 +79,22 @@
 
             [@modalForm "modal-addIesire" "BUT_ADD_IESIRE" "/app/secure/registru/add-iesire" "ADD_INTRARE" "book"]
                 [#include "dialogs/addIesireForm.ftl"]
+            [/@modalForm]
+
+            [@modalForm "modal-editIntrare" "EDIT_REZERVARE" "/app/secure/registru/edit-intrare" "UPDATE_INTRARE" "calendar"]
+                [#include "dialogs/editIntrareForm.ftl"]
+            [/@modalForm]
+
+            [@modalForm "modal-rezerva-intrare" "REZERVA_INREGISTRARI" "/app/secure/registru/rezerva-intrare" "REZERVA_INREGISTRARI" "calendar" ""]
+                [#include "dialogs/rezervaIntrareForm.ftl"]
+            [/@modalForm]
+
+            [@modalForm "modal-editIesire" "EDIT_REZERVARE" "/app/secure/registru/edit-iesire" "UPDATE_INTRARE" "calendar"]
+                [#include "dialogs/editIesireForm.ftl"]
+            [/@modalForm]
+
+            [@modalForm "modal-rezerva-iesire" "REZERVA_INREGISTRARI" "/app/secure/registru/rezerva-iesire" "REZERVA_INREGISTRARI" "calendar" ""]
+                [#include "dialogs/rezervaIesireForm.ftl"]
             [/@modalForm]
         [/@security.authorize]
 
