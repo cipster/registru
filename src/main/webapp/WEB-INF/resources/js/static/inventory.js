@@ -487,7 +487,7 @@ $(document).ready(function () {
 
         $('[data-toggle="tooltip"]').tooltip();
 
-        $('#inventory-table tbody').on('click', 'td.details-control, div.stare-icon', function () {
+        $('#inventory-table').find('tbody').on('click', 'td.details-control, div.stare-icon', function () {
             var tr = $(this).closest('tr');
             var row = inventoryTable.row(tr);
 
