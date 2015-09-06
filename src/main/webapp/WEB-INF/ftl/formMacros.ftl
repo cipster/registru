@@ -309,15 +309,17 @@
 </table>
 [/#macro]
 
-[#macro searchbox id dataTableId]
+[#macro searchbox id dataTableId hasAdvanced=true]
 <div class="search-box">
     <div class="input-group">
         <span class="input-group-addon" id="search-${id}-addon"><i class="fa fa-search"></i></span>
         <input id="${id}" type="text" class="form-control" placeholder="[@spring.message "SEARCH"/]" aria-describedby="search-${id}-addon">
     </div>
-    <div>
-        <a id="advanced-search" title="[@spring.message "ADVANCED_SEARCH_CLOSE"/]">[@spring.message "ADVANCED_SEARCH"/]</a>
-    </div>
+    [#if hasAdvanced]
+        <div>
+            <a id="advanced-search" title="[@spring.message "ADVANCED_SEARCH_CLOSE"/]">[@spring.message "ADVANCED_SEARCH"/]</a>
+        </div>
+    [/#if]
 </div>
 [/#macro]
 
