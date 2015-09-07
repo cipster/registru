@@ -44,8 +44,9 @@
             <!-- Tab panes -->
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active" id="intrare">
-                    [@rowBreak/]
-                    [@rowBreak/]
+                    [@rowBreak]
+                        <br/>
+                    [/@rowBreak]
                     [@ajaxDataTable "intrare-table"]
                         <th width="80"> [@spring.message "REGISTRU.NR_CRT"/] </th>
                         <th width="100"> [@spring.message "REGISTRU.DATA_INTRARII"/] </th>
@@ -57,8 +58,9 @@
                     [/@ajaxDataTable]
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="iesire">
-                    [@rowBreak/]
-                    [@rowBreak/]
+                    [@rowBreak]
+                        <br/>
+                    [/@rowBreak]
                     [@ajaxDataTable "iesire-table"]
                         <th width="100"> [@spring.message "REGISTRU.DATA_IESIRII"/] </th>
                         <th width="150"> [@spring.message "REGISTRU.REZOLVARE"/] </th>
