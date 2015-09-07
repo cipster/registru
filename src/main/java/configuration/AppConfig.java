@@ -32,7 +32,7 @@ import java.util.List;
 @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @ComponentScan(basePackages = {"controllers", "services"})
-@Import({WebSecurityConfig.class, DatasourceConfig.class, FreemarkerConfig.class})
+@Import({WebSecurityConfig.class, DatasourceConfig.class, FreemarkerConfig.class, QuartzConfiguration.class})
 public class AppConfig extends WebMvcConfigurerAdapter {
 
     private static final String MESSAGE_SOURCE_BASE_NAME = "classpath:i18n/messages";
