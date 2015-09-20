@@ -3,7 +3,7 @@
 
 [@rowBreak/]
 [@modalContainer]
-    [@selectBox "rezerva-intrare-form-numarInregistrari" "numarInregistrari" "REGISTRU.NR_REGISTRU" "NR_REGISTRU.PLACEHOLDER" "SEARCH.NO_RESULTS"  "6"]
+    [@selectBox "rezerva-intrare-form-numarInregistrari" "numarInregistrari" "NR_INREGISTRARI" "NR_INREGISTRARI.PLACEHOLDER" "SEARCH.NO_RESULTS"  "6"]
     <option></option>
         [#list 1..50 as option]
         <option value="${option}">${option}</option>

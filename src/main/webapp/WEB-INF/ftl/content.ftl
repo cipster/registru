@@ -12,7 +12,7 @@
 [/#macro]
 
 [#macro dashboard]
-<div class="content col-md-offset-4 col-md-4">
+<div class="content col-md-offset-1 col-md-10">
     [#nested]
 </div>
 [/#macro]
