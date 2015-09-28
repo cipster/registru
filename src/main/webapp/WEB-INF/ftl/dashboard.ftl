@@ -6,10 +6,10 @@
     [@dashboard]
     <div class="well">
         <ul class="list-group">
-            <a class="list-group-item" href="/registru-general">[@spring.message "REGISTRU_GENERAL"/]</a>
-            <a class="list-group-item" href="/registru-aoug">[@spring.message "REGISTRU_AOUG"/]</a>
-            <a class="list-group-item" href="/registru-ogb">[@spring.message "REGISTRU_OGB"/]</a>
-            <a class="list-group-item" href="/condica">[@spring.message "CONDICA"/]</a>
+            <li class="list-group-item lead"><a href="/registru-general">[@spring.message "REGISTRU_GENERAL"/]</a></li>
+            <li class="list-group-item lead"><a href="/registru-aoug">[@spring.message "REGISTRU_AOUG"/]</a></li>
+            <li class="list-group-item lead"><a href="/registru-ogb">[@spring.message "REGISTRU_OGB"/]</a></li>
+            <li class="list-group-item lead"><a href="/condica">[@spring.message "CONDICA"/]</a></li>
         </ul>
     </div>
 
