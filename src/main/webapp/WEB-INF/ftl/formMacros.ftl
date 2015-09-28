@@ -135,13 +135,28 @@
     <label for="${id}">[@spring.message label/]</label>
 
     <div class="input-group date">
-        <input type="text" class="form-control input-sm date-picker" aria-disabled="true" id="${id}" name="${name}" placeholder="[@spring.message placeholder /]" title="[@spring.message label /]"
+        <input type="text" class="form-control input-sm date-picker" id="${id}" name="${name}" placeholder="[@spring.message placeholder /]" title="[@spring.message label /]"
                data-date-format="dd-mm-yyyy" required>
         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
     </div>
 
 
     <div id="${name}-error" class="help-block"></div>
+</div>
+[/#macro]
+
+[#macro rangeDatepicker idFrom idTo nameTo nameFrom label placeholder size="3"]
+<div class=" form-group col-md-${size}">
+    <label for="${idTo}">[@spring.message label/]</label>
+
+    <div class="input-group date">
+        <input type="text" class="input-daterange input-sm form-control" id="${idFrom}" name="${nameTo}" placeholder="[@spring.message placeholder /]" title="[@spring.message label /]"
+               data-date-format="dd-MM-yyyy" required>
+        <span class="input-group-addon"><i class="fa fa-arrows-h"></i></span>
+        <input type="text" class="input-daterange input-sm form-control" id="${idTo}" name="${nameFrom}" placeholder="[@spring.message placeholder /]" title="[@spring.message label /]"
+               data-date-format="dd-MM-yyyy" required>
+    </div>
+    <div id="range-error" class="help-block"></div>
 </div>
 [/#macro]
 
@@ -206,9 +221,9 @@
 </a>
 [/#macro]
 
-[#macro form name action method="post" enctype="application/x-www-form-urlencoded" size="3"]
+[#macro form name action method="post" size="12" enctype="application/x-www-form-urlencoded" ]
 <div class="col-md-${size}">
-    <form id="${name}" name="${name}" action="${action}" method="${method}" role="form" enctype="${enctype}" autocomplete="off">
+    <form id="${name}" name="${name}" action="${action}" method="${method}" role="form" enctype="${enctype}" autocomplete="off" novalidate>
         [#nested]
     </form>
 </div>
@@ -333,5 +348,11 @@
 
         <div class="image-message"></div>
     </div>
+</div>
+[/#macro]
+
+[#macro buttonRow]
+<div class="col-md-12">
+    [#nested]
 </div>
 [/#macro]
